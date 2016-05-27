@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <title>crystal touchers</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- jumpotron header -->
+        <div class="jumbotron col-lg-8 col-lg-offset-2">
+            <h1 class="text-center"><strong>Be gentle with my crystals</strong></h1>
+            <h3 class="text-center"></h3>
+        </div>
+        <!-- click to start panel -->
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center"><strong>Click start to begin</strong></h2>
+                        <div class="text-center">
+                            <button class="btn btn-success btn-lg" id="startButton"><span class="glyphicon glyphicon-star"></span> Start <span class="glyphicon glyphicon-star"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Crystals, W/L -->
+        <div class="row">
+            <!-- crystals appear here -->
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center"><strong>Choose a crystal wisely</strong></h2>
+                        <hr>
+                        <img src="assets/images/crystalBlue.jpg" alt="" class="img crystalBlue" style="height: 200px; width: 200px">
+                        <img src="assets/images/crystalGreen.jpg" alt="" class="img crystalGreen" style="height: 200px; width: 200px">
+                        <img src="assets/images/crystalPink.jpeg" alt="" class="img crystalPink" style="height: 200px; width: 200px">
+                        <img src="assets/images/crystalRed.jpg" alt="" class="img crystalRed" style="height: 200px; width: 200px">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <!-- RNG generator and Current Number Tally -->
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center"><strong> Rules </strong></h2>
+                        <hr>
+                        <p class="text-center"> When the start button is hit, the crystal guardian will generate a mythical integer.</p>
+                        <p class="text-center"> Touching a crystal will transfer a certain amount of energy particles to the user. Try and add up to the right number to vanquish the guardian and claim the minerals for your own purposes. Good luck. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Energy Particle Goal, Current Particles, Wins, Loses -->
+            <div class="row">
+                <!-- Energy Particle Goal -->
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <h3 class="panel-title text-center"><strong> The Mythical Integer </strong> </h3>
+                                            <hr>
+                        <p class="text-center"><span id="mythicalNum"> Integer Unknown </span></p>
+                    </div>
+                </div>
+                <!-- Current Particles -->
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <h3 class="panel-title text-center"> <strong> Current Energy Particles </strong> </h3>
+                                            <hr>
+                        <p class="text-center"><span id="currentNum"> Not Available </span></p>
+                    </div>
+                </div>
+                <!-- Wins/Losses -->
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <h3 class="panel-title text-center"><strong>Wins</strong></h3>
+                                                <hr>
+                        <p class="text-center"><span id="wins"> 0 </span></p>    
+                        <h3 class="panel-title text-center"><strong>Losses</strong></h3>
+                                                <hr>
+                        <p class="text-center"><span id="losses"> 0 </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container div end-->
+    </div>
+    <!-- container div end-->
+</body>
+
+</html>
