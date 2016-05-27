@@ -1,1 +1,15 @@
 /* Create a class for the crystals to resize them all */ 
+.panel {
+	opacity: .9;
+	background-color: grey;
+}
+
+.jumbotron {
+	background-color: grey;
+	
+}
+
+
+#headText {
+	text-decoration-color: red;
+}
