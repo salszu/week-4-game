@@ -1,35 +1,53 @@
 // ID LIST : startButton, crystalBlue, crystalGreen, crystalPink, crystalRed
 // mythicalNum, currentNum, wins, losses 
 
-$(document).ready(function() {
 
-	console.log("ready");
+window.onload=function(){
+	$('.crystalBlue').click(crystals.blueClick);
+	$('.crystalRed').click(crystals.redClick);
+	$('.crystalPink').click(crystals.pinkClick);
+	$('.crystalGreen').click(crystals.greenClick);
+};
 
-	var currentNum = 0;
-	var mythicalNum = 0;
-	var crystalBlue = 5;
-	var crystalRed = 7;
-	var crystalPink = 11;
-	var crystalGreen = 13;
-	var newNum = 0;
-
-	$("#startButton").on("click", function() {
-		 var mythicalNum = Math.floor((Math.random() * 1000) + 100);
+$("#startButton").on("click", function() {
+	 	 var mythicalNum = Math.floor((Math.random() * 269) + 169);
 		 document.getElementById('mythicalNum').innerHTML= mythicalNum;
 		 document.getElementById('currentNum').innerHTML = currentNum;
+});		 
+	var currentNum = 0;
+	var wins = 0;
+	var losses = 0;
+	var crystals = {
 
-		 $(".crystalBlue").on("click", function() {
-			document.getElementById('currentNum').innerHTML = currentNum;
-	})
+				blueClick: function(){
+					currentNum += 5;
+					$("#currentNum").html(currentNum);
+				},
 
+				redClick: function(){
+					currentNum += 7;
+					$("#currentNum").html(currentNum);
+				},
 
-	})
+				pinkClick: function(){
+					currentNum += 11;
+					$("#currentNum").html(currentNum);
+				},
 
-	//$(".crystalBlue").on("click", function() {
-		//currentNum + crystalBlue;
-	//	document.getElementById('currentNum').innerHTML = currentNum;
-//	})
+				greenClick: function(){
+					currentNum += 13;
+					$("#currentNum").html(currentNum);
+				},
 
-
-
-})
+				if (currentNum < mythicalNum){
+							console.log("keep going");
+						}
+						else if(currentNum === mythicalNum){
+							wins++;
+							$("#wins").html(wins);
+						}
+						else if (currentNum > mythicalNum){
+							losses++;
+							$("#losses").html(losses);
+						};
+	};

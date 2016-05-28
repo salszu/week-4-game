@@ -1,15 +1,36 @@
 /* Create a class for the crystals to resize them all */ 
 .panel {
-	opacity: .9;
-	background-color: grey;
+	opacity: .95;
+	background-color: #424242;
 }
 
 .jumbotron {
-	background-color: grey;
-	
+	background-color: #424242;
+	opacity: .95;
 }
 
 
-#headText {
-	text-decoration-color: red;
+/* win/loss */
+#wins {
+	color: green;
+}
+
+#losses {
+	color: red;
+}
+
+#currentNum {
+	color: blue;
+}
+
+#mythicalNum {
+	color: gold;
+}
+
+strong {
+	color: purple;
+}
+.invis {
+	background-color: #424242;
+	color: red;
 }
