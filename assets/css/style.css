@@ -59,3 +59,25 @@ img {
     width: 100%;
     height: auto;
 }
+
+.btn-primary{
+	background: gold;
+
+}
+
+
+$("#checkButton").on("click", function() {
+		if (currentNum < mythicalNum){
+			alert("keep going!");
+			}
+		else if(currentNum > mythicalNum){
+			losses++;
+			$("#losses").html(losses);
+			}
+		else if(currentNum == mythicalNum){
+			wins++;
+			$("#wins").html(wins);
+ 			}
+ 		else{
+			console.log("why isn't this working?");
+			};
