@@ -9,28 +9,53 @@
 	opacity: .95;
 }
 
+.greyPanels {
+	background-color: #424242;
+}
+
 
 /* win/loss */
 #wins {
-	color: green;
+	color: #40FF40;
 }
 
 #losses {
-	color: red;
+	color: #FF0000;
 }
 
 #currentNum {
-	color: blue;
+	color: #4000FF;
 }
 
 #mythicalNum {
-	color: gold;
+	color: #C000C0;
 }
 
 strong {
-	color: purple;
+	color: #80FFC0;
 }
 .invis {
 	background-color: #424242;
 	color: red;
+}
+
+p {
+	color: white;
+}
+
+.glyphicon-star {
+	color: #006400;
+}
+
+.glyphicon-fire {
+	color: #760404;
+}
+
+hr {
+	color: red;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }

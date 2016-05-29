@@ -19,11 +19,12 @@
         <!-- click to start panel -->
         <div class="row">
             <div class="col-lg-4 col-lg-offset-4">
-                <div class="panel panel-default invis">
+                <div class="panel greyPanels">
                     <div class="panel-heading">
                         <h2 class="panel-title text-center"><strong>Click start to begin</strong></h2>
                         <div class="text-center">
                             <button class="btn btn-success btn-lg" id="startButton"><span class="glyphicon glyphicon-star"></span> Start <span class="glyphicon glyphicon-star"></span></button>
+                            <button class="btn btn-danger btn-sm" id="resetButton"><span class="glyphicon glyphicon-fire"></span> Reset <span class="glyphicon glyphicon-fire"></span></button>
                         </div>
                     </div>
                 </div>
@@ -33,7 +34,7 @@
         <div class="row">
             <!-- crystals appear here -->
             <div class="col-md-9">
-                <div class="panel panel-default">
+                <div class="panel greyPanels">
                     <div class="panel-heading">
                         <h2 class="panel-title text-center"><strong>Choose a crystal wisely</strong></h2>
                         <hr>
@@ -47,7 +48,7 @@
             </div>
             <!-- RNG generator and Current Number Tally -->
             <div class="col-md-3">
-                <div class="panel panel-default">
+                <div class="panel greyPanels">
                     <div class="panel-heading">
                         <h2 class="panel-title text-center"><strong> Rules </strong></h2>
                         <hr>
@@ -61,22 +62,25 @@
                 <!-- Energy Particle Goal -->
                 <div class="col-md-4">
                     <div class="panel panel-default">
+                                                <hr>
                         <h3 class="panel-title text-center"><strong> The Mythical Integer </strong> </h3>
-                                            <hr>
+                                                <hr>
                         <p class="text-center"><span id="mythicalNum"> Integer Unknown </span></p>
                     </div>
                 </div>
                 <!-- Current Particles -->
                 <div class="col-md-4">
                     <div class="panel panel-default">
+                                                <hr>
                         <h3 class="panel-title text-center"> <strong> Current Energy Particles </strong> </h3>
-                                            <hr>
+                                                <hr>
                         <p class="text-center"><span id="currentNum"> Not Available </span></p>
                     </div>
                 </div>
                 <!-- Wins/Losses -->
                 <div class="col-md-4">
                     <div class="panel panel-default">
+                                                <hr>
                         <h3 class="panel-title text-center"><strong>Wins</strong></h3>
                                                 <hr>
                         <p class="text-center"><span id="wins"> 0 </span></p>    
