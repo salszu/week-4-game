@@ -31,6 +31,10 @@
 	color: #C000C0;
 }
 
+.fontSize {
+	font-size: 26px;
+	font-weight: bold;
+}
 strong {
 	color: #80FFC0;
 }
@@ -55,29 +59,25 @@ hr {
 	color: red;
 }
 
+h2 {
+	font-size: 28;
+}
+
 img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .btn-primary{
 	background: gold;
-
+	text-decoration-color: black;
+	color: black;
 }
 
 
-$("#checkButton").on("click", function() {
-		if (currentNum < mythicalNum){
-			alert("keep going!");
-			}
-		else if(currentNum > mythicalNum){
-			losses++;
-			$("#losses").html(losses);
-			}
-		else if(currentNum == mythicalNum){
-			wins++;
-			$("#wins").html(wins);
- 			}
- 		else{
-			console.log("why isn't this working?");
-			};
+@media only screen and (max-width: 1199px) {
+	img {
+		height: 150px;
+		width: 150px;
+	}
+}

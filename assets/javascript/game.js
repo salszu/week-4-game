@@ -9,23 +9,11 @@ window.onload=function(){
 	$('.crystalGreen').click(crystals.greenClick);
 };
 
-$("#startButton").on("click", function() {
-	 	 var mythicalNum = Math.floor((Math.random() * 269) + 169);
-		 $("#mythicalNum").html(mythicalNum);
-		 var currentNum = 0;
-		 $("#currentNum").html(currentNum);
-});		
-
-$("#resetButton").on("click", function() {
-		var currentNum = 0;
-		var mythicalNum = 0;
-		$("#mythicalNum").html("0");
-		$("#currentNum").html("0");
-}); 
-	var wins = 0;
-	var losses = 0;
-	var mythicalNum = 0;
-	var currentNum = 0;
+var wins = 0;
+var losses = 0;
+var mythicalNum = 0;
+var currentNum = 0;
+	
 	var crystals = {
 
 						blueClick: function(){
@@ -65,6 +53,20 @@ $("#checkButton").on("click", function() {
 			console.log("why isn't this working");
 			};
 	});	
+
+$("#startButton").on("click", function() {
+	 	 mythicalNum = Math.floor((Math.random() * 269) + 169);
+		 $("#mythicalNum").html(mythicalNum);
+		 currentNum = 0;
+		 $("#currentNum").html(currentNum);
+});		
+
+$("#resetButton").on("click", function() {
+		currentNum = 0;
+		mythicalNum = 0;
+		$("#mythicalNum").html("0");
+		$("#currentNum").html("0");
+}); 
 
 
 						
